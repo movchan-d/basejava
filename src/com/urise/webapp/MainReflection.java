@@ -18,7 +18,6 @@ public class MainReflection {
         field.set(r, "new uuid");
 
         // Invoke r.toString via reflection (вызвать toString через отражение - не r.toString )
-
         Method method = resumeClass.getMethod("toString");
         Object result = method.invoke(r);
         System.out.println(result);
